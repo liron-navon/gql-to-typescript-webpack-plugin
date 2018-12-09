@@ -1,16 +1,7 @@
-interface PluginOptions {
-    scalars?: {
-        [name: string]: string;
-    };
-    ignoreFields?: Array<string>;
-    ignoreTypes?: Array<string>;
-    namespace?: string;
-    outputFile: string;
-}
+import { GqlToTSConfig } from 'gql-to-typescript';
 export default class GqlToTypescriptPlugin {
     private glob;
     private options;
-    constructor(glob: string, options: PluginOptions);
+    constructor(glob: string, options: GqlToTSConfig);
     apply(compiler: any): void;
 }
-export {};

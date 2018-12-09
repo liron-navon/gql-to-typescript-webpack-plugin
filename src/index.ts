@@ -1,18 +1,7 @@
-import {convertFiles} from 'gql-to-typescript';
-
-interface PluginOptions {
-    scalars?: {
-        [name: string]: string
-    };
-    ignoreFields?: Array<string>;
-    ignoreTypes?: Array<string>;
-    namespace?: string;
-    outputFile: string;
-}
-
+import {convertFiles, GqlToTSConfig} from 'gql-to-typescript';
 
 export default class GqlToTypescriptPlugin {
-    constructor(private glob: string, private options: PluginOptions) {}
+    constructor(private glob: string, private options: GqlToTSConfig) {}
 
     apply(compiler) {
         compiler.plugin('done', () => {
