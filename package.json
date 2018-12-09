@@ -1,6 +1,6 @@
 {
   "name": "gql-to-typescript-webpack-plugin",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "A webpack plugin that turns gql tags to typescript",
   "main": "dist/gql-to-typescript-webpack-plugin.js",
   "repository": "https://github.com/liron-navon/gql-to-typescript-webpack-plugin",
@@ -10,13 +10,13 @@
     "build:prod": "NODE_ENV=production webpack",
     "test": "jest",
     "test:watch": "jest --watch",
-    "prepublish": "npm run build"
+    "before:publish": "npm update gql-to-typescript && npm run build:prod"
   },
   "author": "Liron Navon",
   "license": "ISC",
   "dependencies": {
     "glob": "^7.1.3",
-    "gql-to-typescript": "^1.0.9",
+    "gql-to-typescript": "^1.0.10",
     "graphql": "^14.0.2",
     "graphql-tag": "^2.10.0",
     "lodash": "^4.17.11"
