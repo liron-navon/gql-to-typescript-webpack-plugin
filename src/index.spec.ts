@@ -56,7 +56,7 @@ test('The webpack plugin work as expected', () => {
         webpackOptions.plugins.push(new gqlToTypescriptWebpackPlugin(
             './src/**/*.spec.ts',
             {
-                silent: true,
+                silent: false,
                 outputFile: tempFilePath,
                 namespace: 'TestNameSpace'
             }
