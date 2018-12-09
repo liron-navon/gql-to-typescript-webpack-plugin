@@ -1,4 +1,4 @@
-### gql-to-typescript
+### GQL to Typescript webpack plugin
 
 ### usage
 
