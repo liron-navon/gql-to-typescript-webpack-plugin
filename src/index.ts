@@ -10,3 +10,6 @@ export default class GqlToTypescriptPlugin {
         });
     }
 }
+
+module.exports = GqlToTypescriptPlugin;
+

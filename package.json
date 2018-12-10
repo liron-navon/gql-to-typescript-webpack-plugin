@@ -1,6 +1,6 @@
 {
   "name": "gql-to-typescript-webpack-plugin",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A webpack plugin that turns gql tags to typescript",
   "main": "dist/gql-to-typescript-webpack-plugin.js",
   "repository": "https://github.com/liron-navon/gql-to-typescript-webpack-plugin",
